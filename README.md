@@ -1,6 +1,7 @@
 # LightRefractionGame
 A Python game demonstrating light refraction across different materials
 
+```
 import pygame_gui
 from pygame_gui.elements import UITextEntryLine, UIButton, UILabel, UIDropDownMenu
 import pygame
@@ -18,21 +19,25 @@ if getattr(sys, 'frozen', False):
 else:
     # Estamos en el script original de Python
     bundle_dir = os.path.dirname(os.path.abspath(__file__))
-
+```
 
 # Inicializar Pygame
+```
 pygame.init()
-
+```
 # Configuración de pantalla
+```
 WIDTH, HEIGHT = 800, 600
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Juego de refracción")
-
+```
 # Colores
+```
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
-
+```
 # Fuente de texto
+```
 font = pygame.font.Font(None, 36)
 
 def resource_path(relative_path):
@@ -209,3 +214,4 @@ def game_loop():
 
 game_loop()
 pygame.quit()
+```
